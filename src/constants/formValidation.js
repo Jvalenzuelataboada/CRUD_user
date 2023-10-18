@@ -31,7 +31,7 @@ const EMAIL_VALIDATIONS =
           message: "Este campo es requerido",
         },
         pattern: {
-          value: /^(https?|ftp):\/\/[\S/$.?#]+/,
+          value: /(https?:\/\/)?(www\.)?([a-z0-9]([a-z0-9]|(-[a-z0-9]))*\.)+[a-z]+(\/[-a-z_]+)*\/[a-z]+\.(jpg|png|jpeg|JPG|PNG|JPEG)$/i          ,
           message: "Ingrese una dirección (URL) válida",
         },
       };
@@ -42,7 +42,7 @@ const EMAIL_VALIDATIONS =
           message: "Este campo es requerido",
         },
         pattern: {
-            value: /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/,
+            value: /^([0][1-9]|[12][0-9]|3[01])(\/|-)([0][1-9]|[1][0-2])\2(\d{4})(\s)([0-1][1-9]|[2][0-3])(:)([0-5][0-9])$/,
             message: "Ingrese una fecha válida (dd/mm/aaaa)",
           },
       };

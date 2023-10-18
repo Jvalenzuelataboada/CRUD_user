@@ -69,7 +69,7 @@ const Modal = ({
             className="rounded outline-none border border-blue-950/60 px-2 py-1"
             id="birthday"
             type="date"
-            {...register("birthday", DATE_VALIDATIONS)}
+            {...register("birthday")}
           />
         </div>
 
@@ -97,7 +97,7 @@ const Modal = ({
             className="rounded outline-none border border-blue-950/60 px-2 py-1"
             id="image_url"
             type="text"
-            {...register("image_url", URL_IMAGE_VALIDATIONS)}
+            {...register("image_url")}
           />
           {errors.image_url && (
             <span className="text-xs text-red-500">
